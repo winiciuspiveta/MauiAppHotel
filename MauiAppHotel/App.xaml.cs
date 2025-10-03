@@ -7,7 +7,7 @@ namespace MauiAppHotel
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.ContratacaoHospedagem()); // Aqui eu troco a tela inicial da MainPage para ContratacaoHospedagem
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
